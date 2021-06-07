@@ -1,14 +1,24 @@
 :root{
     --imgsz: 1.8rem;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-    font-family: 'arial', sans-serif;;
+    font-family: 'arial', sans-serif;
+    overflow-x: hidden;
 }
 .nav-flex-main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 10px;
+    position: fixed;
+    top: 0px;
+    width: 99%;
+    height: auto;
 
 }
 .nav-link:link, :visited{
@@ -23,15 +33,18 @@ body{
 .nav-flex-left, .nav-flex-right{
     display: flex;
     flex-direction: row;
-    gap: 25px;
     margin-top: 12px;
 }
 
 .nav-flex-left{
     margin-left: 15px;
+    gap: 25px;
 }
-.nav-flex-right{
-    gap: 20px
+.right{
+    margin-right: 20px;
+}
+.menu-img{
+    margin-right: 15px;
 }
 
 .nav-img{
@@ -39,10 +52,10 @@ body{
     height: var(--imgsz);
     margin: 0;
     padding: 0;
-    margin-left: 5px;
     position: relative;
     left: 4px;
     bottom: 1px;
+
 }
 .pfp{
     width: 2.5rem;
@@ -50,20 +63,34 @@ body{
     position: relative;
     bottom: 8px;
     z-index: -1;
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
+}
+.nine-img{
+    position: sticky;
 }
 .circle-border{
     border-radius: 50%;
 }
 .nav-img-cont{
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
-    bottom: 15px;
+    bottom: 14px;
+    margin-left: 10px;
+
 }
 .nav-img-cont:hover{
     background-color: rgb(211, 211, 211);
     border-radius: 50%;
+}
+#core{
+    width: 100vh;
+    height: 100vh;
+    border: 3px red solid;
+
 }
