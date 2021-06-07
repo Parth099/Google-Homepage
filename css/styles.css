@@ -1,0 +1,69 @@
+:root{
+    --imgsz: 1.8rem;
+}
+
+body{
+    font-family: 'arial', sans-serif;;
+}
+.nav-flex-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav-link:link, :visited{
+    color: white;
+    text-decoration: none;
+    color: #242424;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.nav-flex-left, .nav-flex-right{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 12px;
+}
+
+.nav-flex-left{
+    margin-left: 15px;
+}
+.nav-flex-right{
+    gap: 20px
+}
+
+.nav-img{
+    width: var(--imgsz);
+    height: var(--imgsz);
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    position: relative;
+    left: 4px;
+    bottom: 1px;
+}
+.pfp{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    bottom: 8px;
+    z-index: -1;
+    margin-left: 0;
+}
+.circle-border{
+    border-radius: 50%;
+}
+.nav-img-cont{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+}
+.nav-img-cont:hover{
+    background-color: rgb(211, 211, 211);
+    border-radius: 50%;
+}
